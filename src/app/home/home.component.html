@@ -1,1 +1,33 @@
-<h1>{{ message }}</h1>
+<h1>Banco de Sangue - Estatísticas</h1>
+
+<h2>Candidatos por Estado</h2>
+<ul>
+  <li *ngFor="let state of Object.keys(candidatesPerState)">
+    {{ state }}: {{ candidatesPerState[state] }}
+  </li>
+</ul>
+
+<h2>IMC Médio por Faixa Etária</h2>
+<ul>
+  <li *ngFor="let group of Object.keys(averageIMCByAgeGroup)">
+    {{ group }}: {{ averageIMCByAgeGroup[group] | number: '1.2-2' }}
+  </li>
+</ul>
+
+<h2>Percentual de Obesos</h2>
+<p>Homens: {{ obesityPercentage.men | number: '1.2-2' }}%</p>
+<p>Mulheres: {{ obesityPercentage.women | number: '1.2-2' }}%</p>
+
+<h2>Média de Idade por Tipo Sanguíneo</h2>
+<ul>
+  <li *ngFor="let bloodType of Object.keys(averageAgeByBloodType)">
+    {{ bloodType }}: {{ averageAgeByBloodType[bloodType] | number: '1.2-2' }} anos
+  </li>
+</ul>
+
+<h2>Possíveis Doadores por Tipo Sanguíneo</h2>
+<ul>
+  <li *ngFor="let bloodType of Object.keys(possibleDonors)">
+    {{ bloodType }}: {{ possibleDonors[bloodType] }}
+  </li>
+</ul>
