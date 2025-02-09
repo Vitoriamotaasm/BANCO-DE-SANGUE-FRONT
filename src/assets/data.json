@@ -1,0 +1,29 @@
+[
+    {
+      "nome": "João Silva",
+      "idade": 25,
+      "peso": 70,
+      "altura": 1.75,
+      "tipo_sanguineo": "A+",
+      "sexo": "M",
+      "estado": "SP"
+    },
+    {
+      "nome": "Maria Oliveira",
+      "idade": 35,
+      "peso": 80,
+      "altura": 1.60,
+      "tipo_sanguineo": "O-",
+      "sexo": "F",
+      "estado": "RJ"
+    },
+    {
+      "nome": "Carlos Souza",
+      "idade": 45,
+      "peso": 90,
+      "altura": 1.80,
+      "tipo_sanguineo": "B+",
+      "sexo": "M",
+      "estado": "MG"
+    }
+  ]
